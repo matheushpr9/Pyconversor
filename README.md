@@ -45,3 +45,4 @@ pyconversor is a lib developed with the aim of unifying all the conversion tools
 ## To upload your own project to pypi
 
 Follow [this site](https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-your-project-to-pypi)
+Also recommend following [this video](https://www.youtube.com/watch?v=JkeNVaiUq_c&ab_channel=JamesBriggs)
