@@ -39,3 +39,7 @@ Pyconvert is a lib developed with the aim of unifying all the conversion tools a
 
 - [x] Convert a dictionary to a XML (on a raw string or not)
 - [ ] Convert a xml to a dictionary/.
+
+## To upload your own project to pypi
+
+Follow [this site](https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-your-project-to-pypi)
