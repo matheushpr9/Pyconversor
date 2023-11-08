@@ -1,7 +1,6 @@
 class Node:
     def __init__(self, name, value, path:str = '/') -> None:
-        print(type(value))
-        print(type(value) is dict)
+    
         if type(value) is dict:
             self.value = []
             for key in value:
@@ -25,17 +24,22 @@ class Node:
         print(f"\r{cont*'   ' }</{self.name}>")
 
 
-    def convert_node_to_xml(self, string='<?xml version="1.0" encoding="utf-8"?>'):
-        string += f"<{self.name}>"
+    def convert_node_to_xml(self, raw_string: bool = True):
+        
+        stringify_node = self.stringify_node_value()
+        string= '<?xml version="1.0" encoding="utf-8"?>' + stringify_node
+
+        return repr(string) if raw_string else string 
+
+    def stringify_node_value(self, string='', )->str:
+        string+=f"<{self.name}>"
+        initial_string = "\r\n"
         if type(self.value) is list:
             for node in self.value:
-                print(node)
-                string += node.convert_node_to_xml('')
+                string += initial_string + node.stringify_node_value()
         else:
-            string+=str(self.value)
-        string+=f"</{self.name}>"
-        
-        
+            string += initial_string+ str(self.value)
+        string+= initial_string + f"</{self.name}>"
         return string
 
     
