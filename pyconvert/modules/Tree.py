@@ -1,4 +1,4 @@
-from modules.Node import Node
+from pyconvert.modules.Node import Node
 
 class Tree:
     def create_tree_by_dict(dictionary: dict):

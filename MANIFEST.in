@@ -1,2 +1,3 @@
-include pyconvert/*.py
-include pyconvert/modules/*.py
+include pyconvert/modules
+include pyconvert/modules/Node.py
+include pyconvert/modules/Tree.py
