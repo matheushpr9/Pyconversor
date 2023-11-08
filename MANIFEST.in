@@ -1,0 +1,2 @@
+include pyconvert/*.py
+include pyconvert/modules/*.py
