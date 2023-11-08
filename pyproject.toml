@@ -3,12 +3,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "pyconvert"
+name = "pyconversor"
 version = "0.0.1"
 authors = [
     {name = "Matheus Henrique Ptasinski Rosa",email = "matheushpr9@gmail.com"},
 ]
-description = "Pyconvert is a lib developed with the aim of unifying all the conversion tools a dev might need during development in one place."
+description = "pyconversor is a lib developed with the aim of unifying all the conversion tools a dev might need during development in one place."
 readme = "README.md"
 python_requires = ">=3.7"
 classifiers = [
@@ -18,7 +18,7 @@ classifiers = [
 ]
 
 [project.url]
-"Homepage" = "https://github.com/matheushpr9/Pyconvert"
-"Bug Tracker"= "https://github.com/matheushpr9/Pyconvert/issues"
+"Homepage" = "https://github.com/matheushpr9/pyconversor"
+"Bug Tracker"= "https://github.com/matheushpr9/pyconversor/issues"
 [options.packages.find]
 where = "modules"

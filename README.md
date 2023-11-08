@@ -1,17 +1,17 @@
-# Pyconvert
+# pyconversor
 
 Pypi link.
 
 ## Motivation
 
-Pyconvert is a lib developed with the aim of unifying all the conversion tools a dev might need during development in one place.
+pyconversor is a lib developed with the aim of unifying all the conversion tools a dev might need during development in one place.
 
 ## Instructions
 
 1. Install:
 
     ``` shell
-        pip install pyconvert
+        pip install pyconversor
     ```
 
 2. Convert:
@@ -19,7 +19,7 @@ Pyconvert is a lib developed with the aim of unifying all the conversion tools a
     **Example:**
 
     ``` python
-    from pycorvert import Pyconvert
+    from pycorvert import pyconversor
 
     test = {
     
@@ -31,7 +31,7 @@ Pyconvert is a lib developed with the aim of unifying all the conversion tools a
             }
         }
     }
-    string = Pyconvert.convert_dict_to_xml(dictionary=test, raw_string=False)
+    string = pyconversor.convert_dict_to_xml(dictionary=test, raw_string=False)
 
     print(string)
 

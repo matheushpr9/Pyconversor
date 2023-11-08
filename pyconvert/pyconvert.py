@@ -1,4 +1,4 @@
-from pyconvert.modules.Tree import Tree
+from pyconversor.modules.Tree import Tree
 
 def convert_dict_to_xml(dictionary: dict, raw_string: bool = True) -> str:
     root = Tree.create_tree_by_dict(dictionary=dictionary)
